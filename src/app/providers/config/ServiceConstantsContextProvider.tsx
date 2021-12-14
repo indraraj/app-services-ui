@@ -9,7 +9,7 @@ export const ServiceConstantsContextProvider: React.FunctionComponent = ({ child
   React.useEffect(() => {
     (async () => {
       if (value === undefined) {
-        const response = await fetch(`${__webpack_public_path__}/service-constants.json`);
+        const response = await fetch(`${__webpack_public_path__}service-constants.json`);
         try {
           const jsonConfig = await response.json();
           console.debug('Done loading constants');
